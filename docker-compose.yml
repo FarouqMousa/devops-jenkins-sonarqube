@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-  postgres:
+  postgres-sonar:
     container_name: postgres-sonar
     image: postgres:latest
     #image: postgres:9.6
