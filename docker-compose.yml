@@ -33,4 +33,3 @@ services:
 networks:
   cloudacademylabs:
     name: cloudacademylabs
-© 2020 GitHub, Inc.
