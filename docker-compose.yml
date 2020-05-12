@@ -5,7 +5,7 @@ services:
     image: postgres:latest
     #image: postgres:9.6
     networks:
-      - cloudacademylabs
+      - labs
     environment:
       POSTGRES_USER: sonar
       POSTGRES_PASSWORD: sonarpasswd
@@ -22,7 +22,7 @@ services:
       - "9000:9000"
       - "9092:9092"
     networks:
-      - cloudacademylabs
+      - labs
     environment:
       SONARQUBE_JDBC_USERNAME: sonar
       SONARQUBE_JDBC_PASSWORD: sonarpasswd
@@ -31,5 +31,5 @@ services:
       - postgres-sonar
 
 networks:
-  cloudacademylabs:
-    name: cloudacademylabs
+  labs:
+    name: labs
